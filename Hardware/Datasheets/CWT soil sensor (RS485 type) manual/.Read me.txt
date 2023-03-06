@@ -1,0 +1,18 @@
+5PIN probe type manual works for below type:
+
+THPH-S
+CPH-S
+THCPH-S
+NPKPH-S
+NPKTHPH-S
+NPKPHC-S
+NPKPHCTH-S
+
+
+N=Nitrogen
+P=Phosphorus
+K=Potassium
+PH=PH
+C=Conductivity(EC)
+T=Temperature
+H=Humidity(moisture)

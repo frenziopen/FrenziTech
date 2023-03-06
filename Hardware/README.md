@@ -1,0 +1,1 @@
+Added datasheets and schematics of IoT board based on Heltec WiFi LoRA V2 - Aamir 03/05/2022

@@ -1,0 +1,6 @@
+
+when irrigate with water, the NPK value increase.
+the sensor meausre concentration.
+water increase the concentration.
+if soil is too dry causes inaccuracy.
+when moisture is more than 20%, the value is correct.
