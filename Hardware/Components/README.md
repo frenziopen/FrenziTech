@@ -1,7 +1,7 @@
 # Components <br/>
 <p float="left">
-<img src="https://github.com/frenziopen/FrenziTech/blob/main/Hardware/Components/WhatsApp%20Image%202023-03-09%20at%201.38.14%20PM.jpeg" width="200" />
-<img src="https://github.com/frenziopen/FrenziTech/blob/main/Hardware/Components/WhatsApp%20Image%202023-03-09%20at%2012.49.02%20PM.jpeg" width="200" />
+<img src="https://github.com/frenziopen/FrenziTech/blob/main/Hardware/Components/WhatsApp%20Image%202023-03-09%20at%201.38.14%20PM.jpeg" width="500" />
+<img src="https://github.com/frenziopen/FrenziTech/blob/main/Hardware/Components/WhatsApp%20Image%202023-03-09%20at%2012.49.02%20PM.jpeg" width="500" />
 </p>
 
 ## ESP 32  Devkitc V4
