@@ -1,6 +1,8 @@
 # Components <br/>
+<p float="left">
 <img src="https://github.com/frenziopen/FrenziTech/blob/main/Hardware/Components/WhatsApp%20Image%202023-03-09%20at%201.38.14%20PM.jpeg" width="200" />
 <img src="https://github.com/frenziopen/FrenziTech/blob/main/Hardware/Components/WhatsApp%20Image%202023-03-09%20at%2012.49.02%20PM.jpeg" width="200" />
+</p>
 
 ## ESP 32  Devkitc V4
 1. [Documentation](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-devkitc.html#get-started-esp32-devkitc-board-front)
