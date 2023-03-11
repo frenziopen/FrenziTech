@@ -15,7 +15,7 @@ Netbeat RTU
 Wildeye express
 <p float="left"><img src="https://github.com/frenziopen/FrenziTech/blob/main/Hardware/Products/wildeye1.jpg" width="500" /></p>
 Wildeye enterprise
-<p float="left"><img src=https://github.com/frenziopen/FrenziTech/blob/main/Hardware/Products/wildeye2.JPG" width="500" /></p>
+<p float="left"><img src="https://github.com/frenziopen/FrenziTech/blob/main/Hardware/Products/wildeye2.JPG" width="500" /></p>
 Valley Irrigation Pump
 <p float="left"><img src="https://github.com/frenziopen/FrenziTech/blob/main/Hardware/Products/pump-command_navigation.jpg" width="500" /></p>
 Hobo Soil moisture/ temp/ EC
