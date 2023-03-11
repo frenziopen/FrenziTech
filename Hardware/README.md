@@ -6,3 +6,9 @@ Added datasheets and schematics of IoT board based on Heltec WiFi LoRA V2 - Aami
 
 2. Wildeye </br>
 [Info + Price](https://smarterirrigation.com.au/wp-content/uploads/2020/12/IrrigationSchedulingTechnologies_book_V4.pdf) </br>
+
+# Product Images <br/>
+<p float="left">
+<img src="https://github.com/frenziopen/FrenziTech/blob/main/Hardware/Products/netmcu.webp" width="500" />
+<img src="https://github.com/frenziopen/FrenziTech/blob/main/Hardware/Products/netrtu.webp" width="500" />
+</p>
