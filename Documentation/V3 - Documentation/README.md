@@ -14,7 +14,7 @@
 
 **Product Datasheet:** [https://components101.com/wireless/sx1278-lora-rf-module-features-dimension-datasheet](https://components101.com/wireless/sx1278-lora-rf-module-features-dimension-datasheet) </br>
 **Product Link:** [https://www.aliexpress.com/item/1005001621012182.html?spm=a2g0o.productlist.main.25.2b77a0daeGcaQt&algo_pvid=c9297144-e304-4e0c-885f-db6e6624fa44&algo_exp_id=c9297144-e304-4e0c-885f-db6e6624fa44-12&pdp_ext_f=%7B%22sku_id%22%3A%2212000028808965005%22%7D&pdp_npi=3%40dis%21PKR%21889.97%21889.97%21%21%21%21%21%40210217c716783489063053248d0750%2112000028808965005%21sea%21PK%212664612477&curPageLogUid=eKCga9fPZaIl](https://www.aliexpress.com/item/1005001621012182.html?spm=a2g0o.productlist.main.25.2b77a0daeGcaQt&algo_pvid=c9297144-e304-4e0c-885f-db6e6624fa44&algo_exp_id=c9297144-e304-4e0c-885f-db6e6624fa44-12&pdp_ext_f=%7B%22sku_id%22%3A%2212000028808965005%22%7D&pdp_npi=3%40dis%21PKR%21889.97%21889.97%21%21%21%21%21%40210217c716783489063053248d0750%2112000028808965005%21sea%21PK%212664612477&curPageLogUid=eKCga9fPZaIl) </br>
-<img src="https://github.com/frenziopen/FrenziTech/blob/main/Documentation/V3%20-%20Documentation/Modules/5M05.png" width="300" />
+<img src="https://github.com/frenziopen/FrenziTech/blob/main/Documentation/V3%20-%20Documentation/Modules/LoraRa02.webp" width="300" />
 
 
 
