@@ -8,7 +8,7 @@
 
 **Product Datasheet:** [https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-devkitc.html#get-started-esp32-devkitc-board-front](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-devkitc.html#get-started-esp32-devkitc-board-front) </br>
 **Product Link:** [https://www.aliexpress.com/item/1005001838731651.html?spm=a2g0o.productlist.main.3.b5466ba4krL2Js&algo_pvid=3b297091-9289-43f6-a660-9340cbc09a5a&algo_exp_id=3b297091-9289-43f6-a660-9340cbc09a5a-1&pdp_ext_f=%7B%22sku_id%22%3A%2212000017806005764%22%7D&pdp_npi=3%40dis%21PKR%211602.3%211122.74%21%21%21%21%21%40211bd3cb16789604857662015d0709%2112000017806005764%21sea%21PK%212664612477&curPageLogUid=RjYR4nhKRuv7](https://www.aliexpress.com/item/1005001838731651.html?spm=a2g0o.productlist.main.3.b5466ba4krL2Js&algo_pvid=3b297091-9289-43f6-a660-9340cbc09a5a&algo_exp_id=3b297091-9289-43f6-a660-9340cbc09a5a-1&pdp_ext_f=%7B%22sku_id%22%3A%2212000017806005764%22%7D&pdp_npi=3%40dis%21PKR%211602.3%211122.74%21%21%21%21%21%40211bd3cb16789604857662015d0709%2112000017806005764%21sea%21PK%212664612477&curPageLogUid=RjYR4nhKRuv7) </br>
-<img src="https://github.com/frenziopen/FrenziTech/blob/main/Documentation/V3%20-%20Documentation/Modules/5M05.png" width="300" />
+<img src="https://github.com/frenziopen/FrenziTech/blob/main/Documentation/V3%20-%20Documentation/Modules/ESP32-DevKitC-V4.jpg" width="300" />
 
 ## LoRa Ra-02 AI-Thinker
 
