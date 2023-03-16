@@ -1,4 +1,4 @@
 ## Power Supply
 
-Product Datasheet []() </br>
-Product Link [https://www.amazon.in/s?k=5v+3A+power+supply&page=2&qid=1678953808&ref=sr_pg_2](https://www.amazon.in/s?k=5v+3A+power+supply&page=2&qid=1678953808&ref=sr_pg_2) </br>
+Product Datasheet [https://datasheet.lcsc.com/szlcsc/1912111437_HI-LINK-HLK-5M03_C209906.pdf](https://datasheet.lcsc.com/szlcsc/1912111437_HI-LINK-HLK-5M03_C209906.pdf) </br>
+Product Link [https://www.aliexpress.com/item/4000295681968.html?spm=a2g0o.productlist.main.1.6c9548d2AWw1xX&algo_pvid=178f5eff-3f4b-4bc3-b183-bdca7c82cab5&algo_exp_id=178f5eff-3f4b-4bc3-b183-bdca7c82cab5-0&pdp_ext_f=%7B%22sku_id%22%3A%2210000001228161883%22%7D&pdp_npi=3%40dis%21PKR%21902.7%21902.7%21%21%21%21%21%4021021f7b16789553233902609d06d1%2110000001228161883%21sea%21PK%212664612477&curPageLogUid=GS08Etd451hJ](https://www.aliexpress.com/item/4000295681968.html?spm=a2g0o.productlist.main.1.6c9548d2AWw1xX&algo_pvid=178f5eff-3f4b-4bc3-b183-bdca7c82cab5&algo_exp_id=178f5eff-3f4b-4bc3-b183-bdca7c82cab5-0&pdp_ext_f=%7B%22sku_id%22%3A%2210000001228161883%22%7D&pdp_npi=3%40dis%21PKR%21902.7%21902.7%21%21%21%21%21%4021021f7b16789553233902609d06d1%2110000001228161883%21sea%21PK%212664612477&curPageLogUid=GS08Etd451hJ) </br>
