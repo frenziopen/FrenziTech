@@ -24,24 +24,28 @@
 ## Solar Panel
 
 **Product Link:** [https://www.aliexpress.com/item/1005004776875569.html?spm=a2g0o.productlist.main.111.3d07dec6yhsoRR&pdp_ext_f=%7B%22sku_id%22%3A%2212000030443793220%22%7D&pdp_npi=3%40dis%21PKR%212282.15%211416.11%21%21%21%21%21%40211bf3f116789638759234262d0761%2112000030443793220%21sea%21PK%212664612477&curPageLogUid=RqBWoP05tlr8](https://www.aliexpress.com/item/1005004776875569.html?spm=a2g0o.productlist.main.111.3d07dec6yhsoRR&pdp_ext_f=%7B%22sku_id%22%3A%2212000030443793220%22%7D&pdp_npi=3%40dis%21PKR%212282.15%211416.11%21%21%21%21%21%40211bf3f116789638759234262d0761%2112000030443793220%21sea%21PK%212664612477&curPageLogUid=RqBWoP05tlr8) </br>
+<img src="https://github.com/frenziopen/FrenziTech/blob/main/Documentation/V3%20-%20Documentation/Modules/SolarPanel18V2W.webp" width="300" /> 
 
 ## CN3791 Solar Charging Module
 
 **Product Link:** [https://www.aliexpress.com/item/1005002588364045.html?spm=a2g0o.productlist.main.1.13167902iVWsy1&algo_pvid=8d9ab1f5-0cfd-482f-83e0-ca2d13e1608c&algo_exp_id=8d9ab1f5-0cfd-482f-83e0-ca2d13e1608c-0&pdp_ext_f=%7B%22sku_id%22%3A%2212000028599329306%22%7D&pdp_npi=3%40dis%21PKR%21383.65%21287.74%21%21%21%21%21%40211bea7b16789643158247528d0706%2112000028599329306%21sea%21PK%212664612477&curPageLogUid=xwKBASu19jRA](https://www.aliexpress.com/item/1005002588364045.html?spm=a2g0o.productlist.main.1.13167902iVWsy1&algo_pvid=8d9ab1f5-0cfd-482f-83e0-ca2d13e1608c&algo_exp_id=8d9ab1f5-0cfd-482f-83e0-ca2d13e1608c-0&pdp_ext_f=%7B%22sku_id%22%3A%2212000028599329306%22%7D&pdp_npi=3%40dis%21PKR%21383.65%21287.74%21%21%21%21%21%40211bea7b16789643158247528d0706%2112000028599329306%21sea%21PK%212664612477&curPageLogUid=xwKBASu19jRA)
+<img src="https://github.com/frenziopen/FrenziTech/blob/main/Documentation/V3%20-%20Documentation/Modules/CN3791.webp" width="300" /> 
 
 ## 18650 Lithium Ion Cell
 
 **Product Link:** [https://www.aliexpress.com/item/1005005190444169.html?spm=a2g0o.productlist.main.1.445e184fhDiSY2&algo_pvid=f12014f4-0b65-4bfc-bd5b-04215e79ee02&algo_exp_id=f12014f4-0b65-4bfc-bd5b-04215e79ee02-0&pdp_ext_f=%7B%22sku_id%22%3A%2212000032055379214%22%7D&pdp_npi=3%40dis%21PKR%211147.92%21551.13%21%21%21%21%21%4021021b4716789654001221090d0701%2112000032055379214%21sea%21PK%212664612477&curPageLogUid=HNYw7aN4gAdk](https://www.aliexpress.com/item/1005005190444169.html?spm=a2g0o.productlist.main.1.445e184fhDiSY2&algo_pvid=f12014f4-0b65-4bfc-bd5b-04215e79ee02&algo_exp_id=f12014f4-0b65-4bfc-bd5b-04215e79ee02-0&pdp_ext_f=%7B%22sku_id%22%3A%2212000032055379214%22%7D&pdp_npi=3%40dis%21PKR%211147.92%21551.13%21%21%21%21%21%4021021b4716789654001221090d0701%2112000032055379214%21sea%21PK%212664612477&curPageLogUid=HNYw7aN4gAdk)
 **Product Datasheet:** [https://himaxelectronics.com/product-item/18650-li-ion-5v-2200mah-battery-pack/](https://himaxelectronics.com/product-item/18650-li-ion-5v-2200mah-battery-pack/)
+<img src="https://github.com/frenziopen/FrenziTech/blob/main/Documentation/V3%20-%20Documentation/Modules/18650Cell.webp" width="300" /> 
 
 ## 18650 Cell Holder
 
 **Product Link:** [https://www.aliexpress.com/item/1005003427808320.html?spm=a2g0o.productlist.main.17.264a4683AjnNBX&algo_pvid=6c7f2a16-a4a4-4cfe-a6f3-7eb847dc6712&algo_exp_id=6c7f2a16-a4a4-4cfe-a6f3-7eb847dc6712-8&pdp_ext_f=%7B%22sku_id%22%3A%2212000030184915547%22%7D&pdp_npi=3%40dis%21PKR%21344.16%21287.74%21%21%21%21%21%40211be54b16789654577715500d06eb%2112000030184915547%21sea%21PK%212664612477&curPageLogUid=q8ZGXGYsQTFh](https://www.aliexpress.com/item/1005003427808320.html?spm=a2g0o.productlist.main.17.264a4683AjnNBX&algo_pvid=6c7f2a16-a4a4-4cfe-a6f3-7eb847dc6712&algo_exp_id=6c7f2a16-a4a4-4cfe-a6f3-7eb847dc6712-8&pdp_ext_f=%7B%22sku_id%22%3A%2212000030184915547%22%7D&pdp_npi=3%40dis%21PKR%21344.16%21287.74%21%21%21%21%21%40211be54b16789654577715500d06eb%2112000030184915547%21sea%21PK%212664612477&curPageLogUid=q8ZGXGYsQTFh)
+<img src="https://github.com/frenziopen/FrenziTech/blob/main/Documentation/V3%20-%20Documentation/Modules/BatteryHolder.webp" width="300" /> 
 
 ## 6 Channel Relay Module
 
 **Product Link:** [https://www.aliexpress.com/item/1005002710543085.html?spm=a2g0o.productlist.main.1.6b7c11f28bxkDY&algo_pvid=f445d7ba-5055-485b-856d-fb9b9c7f2ff4&algo_exp_id=f445d7ba-5055-485b-856d-fb9b9c7f2ff4-0&pdp_ext_f=%7B%22sku_id%22%3A%2212000021809372701%22%7D&pdp_npi=3%40dis%21PKR%21270.81%21236.96%21%21%21%21%21%40212244c416789662428336311d0728%2112000021809372701%21sea%21PK%212664612477&curPageLogUid=LynHGoFMAXUg](https://www.aliexpress.com/item/1005002710543085.html?spm=a2g0o.productlist.main.1.6b7c11f28bxkDY&algo_pvid=f445d7ba-5055-485b-856d-fb9b9c7f2ff4&algo_exp_id=f445d7ba-5055-485b-856d-fb9b9c7f2ff4-0&pdp_ext_f=%7B%22sku_id%22%3A%2212000021809372701%22%7D&pdp_npi=3%40dis%21PKR%21270.81%21236.96%21%21%21%21%21%40212244c416789662428336311d0728%2112000021809372701%21sea%21PK%212664612477&curPageLogUid=LynHGoFMAXUg)
-
+<img src="https://github.com/frenziopen/FrenziTech/blob/main/Documentation/V3%20-%20Documentation/Modules/6ChannelRelay.webp" width="300" /> 
 
 
 
