@@ -54,8 +54,8 @@
 
 ## TTL to RS485 Module
 
-**Product Link:** [https://www.amazon.com/gp/product/B08ZNF55V9/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1](https://www.amazon.com/gp/product/B08ZNF55V9/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1)
-**Product Datasheet:** [https://joy-it.net/files/files/Produkte/COM-TTL-RS485/COM-TTL-RS485_Datasheet_2022-08-01.pdf](https://joy-it.net/files/files/Produkte/COM-TTL-RS485/COM-TTL-RS485_Datasheet_2022-08-01.pdf)
+**Product Link:** [https://www.amazon.com/gp/product/B08ZNF55V9/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1](https://www.amazon.com/gp/product/B08ZNF55V9/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1)</br>
+**Product Datasheet:** [https://joy-it.net/files/files/Produkte/COM-TTL-RS485/COM-TTL-RS485_Datasheet_2022-08-01.pdf](https://joy-it.net/files/files/Produkte/COM-TTL-RS485/COM-TTL-RS485_Datasheet_2022-08-01.pdf)</br>
 **Product Manual:** [https://joy-it.net/files/files/Produkte/COM-TTL-RS485/COM-TTL-RS485_Manual_2021-05-07.pdf](https://joy-it.net/files/files/Produkte/COM-TTL-RS485/COM-TTL-RS485_Manual_2021-05-07.pdf) </br> </br>
 <img src="https://github.com/frenziopen/FrenziTech/blob/main/Documentation/V3%20-%20Documentation/Modules/485TTL.jpg" width="300" />  </br>
 
