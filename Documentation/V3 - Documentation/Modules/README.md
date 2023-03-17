@@ -62,6 +62,7 @@
 ## 4G LTE Module
 
 **Product Link:** [https://www.amazon.com/SIM7600NA-H-Industrial-Communication-Positioning-XYGStudy/dp/B09R8YQ93R?th=1](https://www.amazon.com/SIM7600NA-H-Industrial-Communication-Positioning-XYGStudy/dp/B09R8YQ93R?th=1) </br> </br>
+**Product Datasheet:** [https://www.waveshare.com/SIM7600NA-H-4G-DONGLE.htm](https://www.waveshare.com/SIM7600NA-H-4G-DONGLE.htm)
 <img src="https://github.com/frenziopen/FrenziTech/blob/main/Documentation/V3%20-%20Documentation/Modules/LTE4G.jpg" width="300" />  </br>
 
 
