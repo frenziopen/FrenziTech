@@ -99,3 +99,12 @@
 <img src="https://github.com/frenziopen/FrenziTech/blob/main/Documentation/V3%20-%20Documentation/Modules/FemaleHeader.webp" width="300" /> 
 </p>
 </br>
+
+## Fuse
+
+**Product Link:** [https://www.aliexpress.com/item/1005003562941572.html?spm=a2g0o.productlist.main.15.46fa381bc0fpBI&algo_pvid=440f7ead-2713-4900-b81a-eddb5d7560ea&algo_exp_id=440f7ead-2713-4900-b81a-eddb5d7560ea-7&pdp_ext_f=%7B%22sku_id%22%3A%2212000026296592784%22%7D&pdp_npi=3%40dis%21PKR%21161.11%21141.33%21%21%21%21%21%40211bf12316790518683053095d06f7%2112000026296592784%21sea%21PK%212664612477&curPageLogUid=ywJZjvrDAjGi](https://www.aliexpress.com/item/1005003562941572.html?spm=a2g0o.productlist.main.15.46fa381bc0fpBI&algo_pvid=440f7ead-2713-4900-b81a-eddb5d7560ea&algo_exp_id=440f7ead-2713-4900-b81a-eddb5d7560ea-7&pdp_ext_f=%7B%22sku_id%22%3A%2212000026296592784%22%7D&pdp_npi=3%40dis%21PKR%21161.11%21141.33%21%21%21%21%21%40211bf12316790518683053095d06f7%2112000026296592784%21sea%21PK%212664612477&curPageLogUid=ywJZjvrDAjGi)
+<img src="https://github.com/frenziopen/FrenziTech/blob/main/Documentation/V3%20-%20Documentation/Modules/Fuse.webp" width="300" />  </br>
+
+## Fuse Base
+**Product Link:** [https://www.aliexpress.com/item/32815240178.html?spm=a2g0o.productlist.main.95.45083f38bjkdKt&algo_pvid=012004b8-ad97-42b5-af23-efd031a8b06f&algo_exp_id=012004b8-ad97-42b5-af23-efd031a8b06f-47&pdp_ext_f=%7B%22sku_id%22%3A%2264623363722%22%7D&pdp_npi=3%40dis%21PKR%21277.0%21277.0%21%21%21%21%21%402122443916790516696054762d06e0%2164623363722%21sea%21PK%212664612477&curPageLogUid=wNuqjlOUjC5Y](https://www.aliexpress.com/item/32815240178.html?spm=a2g0o.productlist.main.95.45083f38bjkdKt&algo_pvid=012004b8-ad97-42b5-af23-efd031a8b06f&algo_exp_id=012004b8-ad97-42b5-af23-efd031a8b06f-47&pdp_ext_f=%7B%22sku_id%22%3A%2264623363722%22%7D&pdp_npi=3%40dis%21PKR%21277.0%21277.0%21%21%21%21%21%402122443916790516696054762d06e0%2164623363722%21sea%21PK%212664612477&curPageLogUid=wNuqjlOUjC5Y)
+<img src="https://github.com/frenziopen/FrenziTech/blob/main/Documentation/V3%20-%20Documentation/Modules/FuseBase.webp" width="300" />  </br>
