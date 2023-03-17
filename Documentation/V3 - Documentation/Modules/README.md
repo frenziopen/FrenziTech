@@ -65,5 +65,15 @@
 **Product Datasheet:** [https://www.waveshare.com/SIM7600NA-H-4G-DONGLE.htm](https://www.waveshare.com/SIM7600NA-H-4G-DONGLE.htm) </br> </br>
 <img src="https://github.com/frenziopen/FrenziTech/blob/main/Documentation/V3%20-%20Documentation/Modules/LTE4G.jpg" width="300" />  </br>
 
+## Switch
+
+**Product Link:** [https://media.digikey.com/pdf/Data%20Sheets/C&K/SS-12D07-VG_GA_PA.pdf](https://media.digikey.com/pdf/Data%20Sheets/C&K/SS-12D07-VG_GA_PA.pdf)
+<img src="https://github.com/frenziopen/FrenziTech/blob/main/Documentation/V3%20-%20Documentation/Modules/LTE4G.jpg" width="300" />  </br>
+
+## Push Button
+
+**Product Link:** [https://www.aliexpress.com/item/4001068725725.html?spm=a2g0o.productlist.main.17.63b250a1EPtKJ4&algo_pvid=f97d2652-0ec6-4f13-be8b-e71f34ecda38&algo_exp_id=f97d2652-0ec6-4f13-be8b-e71f34ecda38-8&pdp_ext_f=%7B%22sku_id%22%3A%2210000014021773293%22%7D&pdp_npi=3%40dis%21PKR%21155.46%21144.15%21%21%21%21%21%402102188b16790461384585372d06fe%2110000014021773293%21sea%21PK%212664612477&curPageLogUid=ywTVaGTGctcG](https://www.aliexpress.com/item/4001068725725.html?spm=a2g0o.productlist.main.17.63b250a1EPtKJ4&algo_pvid=f97d2652-0ec6-4f13-be8b-e71f34ecda38&algo_exp_id=f97d2652-0ec6-4f13-be8b-e71f34ecda38-8&pdp_ext_f=%7B%22sku_id%22%3A%2210000014021773293%22%7D&pdp_npi=3%40dis%21PKR%21155.46%21144.15%21%21%21%21%21%402102188b16790461384585372d06fe%2110000014021773293%21sea%21PK%212664612477&curPageLogUid=ywTVaGTGctcG)
+<img src="https://github.com/frenziopen/FrenziTech/blob/main/Documentation/V3%20-%20Documentation/Modules/LTE4G.jpg" width="300" />  </br>
+
 
 
