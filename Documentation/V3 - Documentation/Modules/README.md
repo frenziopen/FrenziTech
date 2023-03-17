@@ -55,12 +55,12 @@
 ## TTL to RS485 Module
 
 **Product Link:** [https://www.amazon.com/gp/product/B08ZNF55V9/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1](https://www.amazon.com/gp/product/B08ZNF55V9/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1)
-<img src="https://github.com/frenziopen/FrenziTech/blob/main/Documentation/V3%20-%20Documentation/Modules/6ChannelRelay.webp" width="300" /> 
+<img src="https://github.com/frenziopen/FrenziTech/blob/main/Documentation/V3%20-%20Documentation/Modules/485TTL.jpg" width="300" /> 
 
 ## 4G LTE Module
 
 **Product Link:** [https://www.amazon.com/SIM7600NA-H-Industrial-Communication-Positioning-XYGStudy/dp/B09R8YQ93R?th=1](https://www.amazon.com/SIM7600NA-H-Industrial-Communication-Positioning-XYGStudy/dp/B09R8YQ93R?th=1)
-<img src="https://github.com/frenziopen/FrenziTech/blob/main/Documentation/V3%20-%20Documentation/Modules/6ChannelRelay.webp" width="300" /> 
+<img src="https://github.com/frenziopen/FrenziTech/blob/main/Documentation/V3%20-%20Documentation/Modules/485TTL.jpg" width="300" /> 
 
 
 
