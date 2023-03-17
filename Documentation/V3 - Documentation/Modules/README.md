@@ -116,4 +116,4 @@
 
 ## Buzzer
 **Product Link:** [https://www.aliexpress.com/item/1005003355970277.html?spm=a2g0o.productlist.main.1.4bcf1130JiXQl7&algo_pvid=3d843ad0-37e8-4b76-8ed7-0720615304e1&algo_exp_id=3d843ad0-37e8-4b76-8ed7-0720615304e1-0&pdp_ext_f=%7B%22sku_id%22%3A%2212000025374031889%22%7D&pdp_npi=3%40dis%21PKR%21296.79%21296.79%21%21%21%21%21%40211bf31616790524015732813d06f1%2112000025374031889%21sea%21PK%212664612477&curPageLogUid=RySro8P1BE8o](https://www.aliexpress.com/item/1005003355970277.html?spm=a2g0o.productlist.main.1.4bcf1130JiXQl7&algo_pvid=3d843ad0-37e8-4b76-8ed7-0720615304e1&algo_exp_id=3d843ad0-37e8-4b76-8ed7-0720615304e1-0&pdp_ext_f=%7B%22sku_id%22%3A%2212000025374031889%22%7D&pdp_npi=3%40dis%21PKR%21296.79%21296.79%21%21%21%21%21%40211bf31616790524015732813d06f1%2112000025374031889%21sea%21PK%212664612477&curPageLogUid=RySro8P1BE8o) </br> </br>
-<img src="https://github.com/frenziopen/FrenziTech/blob/main/Documentation/V3%20-%20Documentation/Modules/FuseBase.webp" width="300" />  </br>
+<img src="https://github.com/frenziopen/FrenziTech/blob/main/Documentation/V3%20-%20Documentation/Modules/Buzzer.webp" width="300" />  </br>
