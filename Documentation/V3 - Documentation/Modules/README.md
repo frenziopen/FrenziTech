@@ -89,3 +89,8 @@
 **Product Datasheet:** [https://joy-it.net/files/files/Produkte/SBC-XL6019/SBC-XL6019_Datasheet_2022-11-08.pdf](https://joy-it.net/files/files/Produkte/SBC-XL6019/SBC-XL6019_Datasheet_2022-11-08.pdf) </br>
 **Product Manual:** [https://joy-it.net/files/files/Produkte/SBC-XL6019/SBC-XL6019_Manual_2021-01-20.pdf](https://joy-it.net/files/files/Produkte/SBC-XL6019/SBC-XL6019_Manual_2021-01-20.pdf) </br> </br>
 <img src="https://github.com/frenziopen/FrenziTech/blob/main/Documentation/V3%20-%20Documentation/Modules/XL6019.jpg" width="300" />  </br>
+
+## Male Female Headers
+
+**Product Link:** [https://www.aliexpress.com/item/1005005241876888.html?spm=a2g0o.productlist.main.59.5d8f68ca3Q93AY&pdp_ext_f=%7B%22sku_id%22%3A%2212000032334538027%22%7D&pdp_npi=3%40dis%21PKR%2173.49%2173.49%21%21%21%21%21%40212279a216790504908434056d0704%2112000032334538027%21sea%21PK%212664612477&curPageLogUid=hZYhF8xvwrsq](https://www.aliexpress.com/item/1005005241876888.html?spm=a2g0o.productlist.main.59.5d8f68ca3Q93AY&pdp_ext_f=%7B%22sku_id%22%3A%2212000032334538027%22%7D&pdp_npi=3%40dis%21PKR%2173.49%2173.49%21%21%21%21%21%40212279a216790504908434056d0704%2112000032334538027%21sea%21PK%212664612477&curPageLogUid=hZYhF8xvwrsq)
+<img src="https://github.com/frenziopen/FrenziTech/blob/main/Documentation/V3%20-%20Documentation/Modules/MaleHeader.webp" width="300" /> <img src="https://github.com/frenziopen/FrenziTech/blob/main/Documentation/V3%20-%20Documentation/Modules/FemaleHeader.webp" width="300" /> </br>
