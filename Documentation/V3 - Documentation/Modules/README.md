@@ -4,6 +4,10 @@
 **Product Link:** [https://www.aliexpress.com/item/4000295681968.html?spm=a2g0o.productlist.main.1.6c9548d2AWw1xX&algo_pvid=178f5eff-3f4b-4bc3-b183-bdca7c82cab5&algo_exp_id=178f5eff-3f4b-4bc3-b183-bdca7c82cab5-0&pdp_ext_f=%7B%22sku_id%22%3A%2210000001228161883%22%7D&pdp_npi=3%40dis%21PKR%21902.7%21902.7%21%21%21%21%21%4021021f7b16789553233902609d06d1%2110000001228161883%21sea%21PK%212664612477&curPageLogUid=GS08Etd451hJ](https://www.aliexpress.com/item/4000295681968.html?spm=a2g0o.productlist.main.1.6c9548d2AWw1xX&algo_pvid=178f5eff-3f4b-4bc3-b183-bdca7c82cab5&algo_exp_id=178f5eff-3f4b-4bc3-b183-bdca7c82cab5-0&pdp_ext_f=%7B%22sku_id%22%3A%2210000001228161883%22%7D&pdp_npi=3%40dis%21PKR%21902.7%21902.7%21%21%21%21%21%4021021f7b16789553233902609d06d1%2110000001228161883%21sea%21PK%212664612477&curPageLogUid=GS08Etd451hJ) </br>
 <img src="https://github.com/frenziopen/FrenziTech/blob/main/Documentation/V3%20-%20Documentation/Modules/5M05.png" width="300" />
 
+##Product Datasheet:** [https://www.meanwellusa.com/upload/pdf/IRM-30/IRM-30-spec.pdf](https://www.meanwellusa.com/upload/pdf/IRM-30/IRM-30-spec.pdf)
+**Product Link:** [https://www.digikey.com/en/products/detail/mean-well-usa-inc/IRM-30-5ST/7704677](https://www.digikey.com/en/products/detail/mean-well-usa-inc/IRM-30-5ST/7704677)
+<img src="https://github.com/frenziopen/FrenziTech/blob/main/Documentation/V3%20-%20Documentation/Modules/MFG_IRM-30-ST.webp" width="300" />
+
 ## ESP 32  Devkitc V4
 
 **Product Datasheet:** [https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-devkitc.html#get-started-esp32-devkitc-board-front](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-devkitc.html#get-started-esp32-devkitc-board-front) </br>
