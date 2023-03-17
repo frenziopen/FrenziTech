@@ -33,6 +33,7 @@
 ## CN3791 Solar Charging Module
 
 **Product Link:** [https://www.aliexpress.com/item/1005002588364045.html?spm=a2g0o.productlist.main.1.13167902iVWsy1&algo_pvid=8d9ab1f5-0cfd-482f-83e0-ca2d13e1608c&algo_exp_id=8d9ab1f5-0cfd-482f-83e0-ca2d13e1608c-0&pdp_ext_f=%7B%22sku_id%22%3A%2212000028599329306%22%7D&pdp_npi=3%40dis%21PKR%21383.65%21287.74%21%21%21%21%21%40211bea7b16789643158247528d0706%2112000028599329306%21sea%21PK%212664612477&curPageLogUid=xwKBASu19jRA](https://www.aliexpress.com/item/1005002588364045.html?spm=a2g0o.productlist.main.1.13167902iVWsy1&algo_pvid=8d9ab1f5-0cfd-482f-83e0-ca2d13e1608c&algo_exp_id=8d9ab1f5-0cfd-482f-83e0-ca2d13e1608c-0&pdp_ext_f=%7B%22sku_id%22%3A%2212000028599329306%22%7D&pdp_npi=3%40dis%21PKR%21383.65%21287.74%21%21%21%21%21%40211bea7b16789643158247528d0706%2112000028599329306%21sea%21PK%212664612477&curPageLogUid=xwKBASu19jRA)</br> </br>
+**Product Datasheet:** [https://www.electroschematics.com/controller/](https://www.electroschematics.com/controller/) </br>
 <img src="https://github.com/frenziopen/FrenziTech/blob/main/Documentation/V3%20-%20Documentation/Modules/CN3791.webp" width="300" />  </br>
 
 ## 18650 Lithium Ion Cell
