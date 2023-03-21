@@ -1,3 +1,10 @@
+## OLED for ESP32
+
+
+**Product Datasheet:** [https://www.meanwellusa.com/upload/pdf/IRM-30/IRM-30-spec.pdf](https://www.meanwellusa.com/upload/pdf/IRM-30/IRM-30-spec.pdf) </br>
+**Product Link:** [https://www.digikey.com/en/products/detail/mean-well-usa-inc/IRM-30-5ST/7704677](https://www.digikey.com/en/products/detail/mean-well-usa-inc/IRM-30-5ST/7704677) </br> </br>
+<img src="https://github.com/frenziopen/FrenziTech/blob/main/Documentation/V3%20-%20Documentation/Modules/OLED.webp" width="300" /> </br>
+
 ## Power Supply
 
 **Product Datasheet:** [https://www.meanwellusa.com/upload/pdf/IRM-30/IRM-30-spec.pdf](https://www.meanwellusa.com/upload/pdf/IRM-30/IRM-30-spec.pdf) </br>
