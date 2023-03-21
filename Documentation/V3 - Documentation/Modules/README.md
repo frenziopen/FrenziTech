@@ -111,6 +111,7 @@
 ## Resetable Fuse
 
 **Product Link:** [https://www.aliexpress.com/item/32915176901.html](https://www.aliexpress.com/item/32915176901.html) </br> </br>
+**Resetable Fuse ?:** [https://ntcsensors.com/The_working_principle_of_PTC_Resettable_fuse/](https://ntcsensors.com/The_working_principle_of_PTC_Resettable_fuse/) </br>
 <img src="https://github.com/frenziopen/FrenziTech/blob/main/Documentation/V3%20-%20Documentation/Modules/ResetFuse.webp" width="300" />  </br>
 
 ## Fuse
