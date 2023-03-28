@@ -1,5 +1,9 @@
-## OLED for ESP32
+## HW 432 - XL6009
 
+**Product Link + Specifications (HallRoad):** [https://hallroad.org/hw-432-xl6009-boost-converter-module.html](https://hallroad.org/hw-432-xl6009-boost-converter-module.html) </br> </br>
+<img src="https://github.com/frenziopen/FrenziTech/blob/main/Documentation/V3%20-%20Documentation/Modules/XL6009.jpg" width="300" /> </br>
+
+## OLED for ESP32
 
 **Product Datasheet:** [https://www.meanwellusa.com/upload/pdf/IRM-30/IRM-30-spec.pdf](https://www.meanwellusa.com/upload/pdf/IRM-30/IRM-30-spec.pdf) </br>
 **Product Link:** [https://www.digikey.com/en/products/detail/mean-well-usa-inc/IRM-30-5ST/7704677](https://www.digikey.com/en/products/detail/mean-well-usa-inc/IRM-30-5ST/7704677) </br> </br>
