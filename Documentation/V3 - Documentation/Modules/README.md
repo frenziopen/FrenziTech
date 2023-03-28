@@ -1,4 +1,4 @@
-## HW 432 - XL6009
+## HW 432 - XL6009 (Variable Buck Boost Converter)
 
 **Product Link + Specifications (HallRoad):** [https://hallroad.org/hw-432-xl6009-boost-converter-module.html](https://hallroad.org/hw-432-xl6009-boost-converter-module.html) </br> </br>
 <img src="https://github.com/frenziopen/FrenziTech/blob/main/Documentation/V3%20-%20Documentation/Modules/XL6009.jpg" width="300" /> </br>
