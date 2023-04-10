@@ -1,6 +1,6 @@
 ## Modules Wiring Diagram (Incomplete)
 
-<img src="https://github.com/frenziopen/FrenziTech/blob/main/Documentation/V3%20-%20Documentation/ESP32_LoRa_Arduino.png" width="1200" />
+<img src="https://github.com/frenziopen/FrenziTech/blob/main/Documentation/V3%20-%20Documentation/ESP32_LoRa_Arduino-v1.png" width="1200" />
 
 ## 
 
