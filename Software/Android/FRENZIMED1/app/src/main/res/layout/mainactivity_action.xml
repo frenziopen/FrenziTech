@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/frontpage1"
+    android:orientation="vertical"
+    tools:context=".MainActivity_action">
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:id="@+id/devicesListView"
+ />
+    <TextView
+        android:id="@+id/tDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button2"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="10dp"
+        android:text="@string/IRLightDuration"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <SeekBar
+        android:id="@+id/sDuration"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="4"
+        android:progress="1"
+        android:progressDrawable="@drawable/custom_progress"
+        android:stepSize="1"
+        android:theme="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:thumb="@drawable/thumb" />
+
+    <TextView
+        android:id="@+id/tvDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Minutes: 10"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginBottom="20dp"
+
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/tStrength"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button2"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="10dp"
+        android:text="@string/IRLightStrength"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <SeekBar
+        android:id="@+id/sStrength"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="3"
+        android:progress="1"
+        android:progressDrawable="@drawable/custom_progress"
+        android:stepSize="1"
+        android:theme="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:thumb="@drawable/thumb" />
+
+    <TextView
+        android:id="@+id/tvStrength"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Strength: 25"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginBottom="20dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button2"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="10dp"
+        android:text="Time Remaining"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="10:00"
+        android:textColor="@color/black"
+        android:textSize="60sp" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginBottom="20dp"
+        android:background="?android:attr/listDivider" />
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/bStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button2"
+                android:backgroundTint="@color/green"
+                android:gravity="center"
+                android:text="START"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/bStop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button2"
+                android:backgroundTint="@android:color/holo_red_dark"
+                android:text="STOP"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:id="@+id/bExit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button2"
+        android:layout_marginTop="20dp"
+
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="EXIT"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
