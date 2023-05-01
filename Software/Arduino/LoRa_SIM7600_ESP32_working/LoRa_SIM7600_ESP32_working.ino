@@ -372,3 +372,4 @@ byte nitrogen() {
   Serial.println(soilConductivity / 10);
   return values[6];
 }
+

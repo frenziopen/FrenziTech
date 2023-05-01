@@ -132,10 +132,14 @@ uint8_t sendATcommand(const char* ATcommand, const char* expected_answer, unsign
   memset(response, '\0', 100);    // Initialize the string
 
   delay(100);
+  Serial.println(ATcommand);
 
   while ( LTESerial.available() > 0) LTESerial.read();   // Clean the input buffer
 
   LTESerial.println(ATcommand);    // Send the AT command
+  Serial.println("at sent");
+  Serial.println(LTESerial.read());
+  Serial.println("at  read");
 
 
   x = 0;
@@ -146,13 +150,14 @@ uint8_t sendATcommand(const char* ATcommand, const char* expected_answer, unsign
     if (LTESerial.available() != 0) {
       // if there are data in the UART input buffer, reads it and checks for the asnwer
       response[x] = LTESerial.read();
-      //            Serial.print(response[x]);
+                 Serial.print(response[x]);
       x++;
       // check if the desired answer  is in the response of the module
       if (strstr(response, expected_answer) != NULL)
       {
         answer = 1;
       }
+	  
     }
     // Waits for the asnwer with time out
   } while ((answer == 0) && ((millis() - previous) < timeout));
@@ -224,21 +229,17 @@ bool SendingShortMessage(const char* PhoneNumber, const char* Message) {
 
 String sendData(String command, const int timeout, boolean debug)
 {
-  String response = "";
+  String response = "timeout";
   LTESerial.println(command);
-
+  Serial.println(command);
   long int time = millis();
   while ( (time + timeout) > millis())
   {
     while (LTESerial.available())
     {
       char c = LTESerial.read();
-      response += c;
+	  response += c;
     }
-  }
-  if (debug)
-  {
-    Serial.print(response);
   }
   return response;
 }
@@ -459,7 +460,8 @@ void handleForm() {
 
 int sec_timer = 0;
 void setup() {
-  Serial.begin(9600);
+    Serial.begin(115200);
+
   WiFi.softAP(ssid, password);
   WiFi.softAPConfig(local_ip, gateway, subnet);
   delay(100);
@@ -467,6 +469,32 @@ void setup() {
   server.on("/get", handleForm);  //form action is handled here
   server.begin();                 //Start server
   Serial.println("HTTP server started");
+  LTESerial.begin(115200, SERIAL_8N1, BT_RX, BT_TX);
+  Serial2.begin(4800);
+
+  delay(600);
+  Serial.println(" Power ON ");
+  pinMode(GPI38,  INPUT);
+
+  pinMode(GPIO25, OUTPUT);
+  // power on pulse
+  digitalWrite(GPIO25, HIGH);
+  delay(500);
+  digitalWrite(GPIO25, LOW);
+  PowerOn();
+  Serial.println(" Msg. ON ");
+  // power on pulse
+  digitalWrite(GPIO25, HIGH);
+  delay(500);
+  digitalWrite(GPIO25, LOW);
+  sendData("AT+COPS=2\r\n", 3000, DEBUG);
+  sendData("AT+CTZU=1\r\n", 3000, DEBUG);
+  sendData("AT+COPS=0\r\n", 3000, DEBUG);
+
+  sendData("AT+CCLK?\r\n", 3000, DEBUG);
+  //ConfigureFTP(ftp_server,ftp_user_name,ftp_user_password);
+  
+
   delay(600);
   pinMode(VI_ADC0_GPI36, INPUT);
   pinMode(VI_ADC1_GPI37, INPUT);
@@ -478,12 +506,11 @@ void setup() {
   pinMode(LTE_VCC_GPO25,  OUTPUT);
   // disable relays
   digitalWrite(MOT_RLC1_GPO32, HIGH);
-  digitalWrite(MOT_RLC2_GPO33, HIGH);
+  digitalWrite(MOT_RLC2_GPO33, HIGH); 
 
   int aVin = analogRead(VM_ADC2_GPI38);
   float dVin = floatMap(aVin, 0, 4095, 0, 3.3);
 
-  Heltec.begin(true /*DisplayEnable Enable*/, false /*LoRa Disable*/, false /*Serial Enable*/);
   Heltec.display -> clear();
   Heltec.display -> setFont(ArialMT_Plain_16); // ArialMT_Plain_10, ArialMT_Plain_16, ArialMT_Plain_24
   Heltec.display -> drawString(0, 10, "BISMILLAH");
@@ -497,6 +524,8 @@ void setup() {
 }
 
 void loop() {
+	
+ 
   server.handleClient();  //Handle client requests
   if (MANUAL_STOP) {
     Serial.print("MANUAL_STOP pressed: ");
