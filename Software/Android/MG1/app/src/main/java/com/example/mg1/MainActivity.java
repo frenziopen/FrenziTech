@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         //etStartTimeMin = (EditText) findViewById(R.id.etStartTimeMin);
         etRunTimeMin = (EditText) findViewById(R.id.etRunTimeMin);
         etInterval = (EditText) findViewById(R.id.etInterval);
+        /*
         etCurrent = (EditText) findViewById(R.id.etCurrent);
 
         etSoilMoisture = (EditText) findViewById(R.id.etSoilMoisture);
@@ -65,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         rd110v = (RadioButton) findViewById(R.id.rd110v);
         rd220v = (RadioButton) findViewById(R.id.rd220v);
         rd440v = (RadioButton) findViewById(R.id.rd440v);
-
+*/
         //  Button
         buttonSubmit = (Button) findViewById(R.id.Submit);
         buttonReset = (Button) findViewById(R.id.cancel_button);
@@ -211,11 +212,11 @@ public class MainActivity extends AppCompatActivity {
         etRunTimeHr.setText(String.format("%02d", motorRunTimeHr));
         etRunTimeMin.setText(String.format("%02d", motorRunTimeMin));
         etInterval.setText(String.format("%02d", motorRunInterval));
-        etCurrent.setText(String.format("%02d", motorCurrent));
-        etSoilMoisture.setText(String.format("%02d", soilMoisturePercent));
-        etSoilTemperature.setText(String.format("%02d", soilTemperature));
-        etAirTemperature.setText(String.format("%02d", airTemperature));
-        rd110v.setChecked(true);
+//        etCurrent.setText(String.format("%02d", motorCurrent));
+//        etSoilMoisture.setText(String.format("%02d", soilMoisturePercent));
+//        etSoilTemperature.setText(String.format("%02d", soilTemperature));
+//        etAirTemperature.setText(String.format("%02d", airTemperature));
+//        rd110v.setChecked(true);
     }
 }
 
