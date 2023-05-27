@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/instruction_0_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_border"
+        android:backgroundTint="@color/teal_200"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/instruction_0_txt"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColorHint="@color/black"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/etStartTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="12"
+        android:gravity="center"
+        android:hint="Hours : Minutes"
+        android:imeOptions="actionNext"
+        android:inputType="time"
+        android:minHeight="48dp" />
+    <TextView
+        android:id="@+id/instruction_1_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_border"
+        android:backgroundTint="@color/teal_200"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/instruction_1_txt"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColorHint="@color/black"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+    <!--        <NumberPicker
+                android:id="@+id/etRunTimeHr"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:gravity="center"
+                android:hint="Hours"
+                />-->
+            <EditText
+                android:id="@+id/etRunTimeHr"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="@string/duration_hr_txt"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="3"
+                android:minHeight="48dp"
+                android:textColorHint="#757575" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:text=":"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColorHint="@color/black"
+                android:textStyle="bold" />
+ <!--           <NumberPicker
+                android:id="@+id/etRunTimeMin"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:gravity="center"
+                android:hint="Min"
+                />-->
+            <EditText
+                android:id="@+id/etRunTimeMin"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="@string/duration_min_txt"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="3"
+                android:minHeight="48dp"
+                android:textColorHint="#757575" />
+        </TableRow>
+    </TableLayout>
+
+
+    <TextView
+        android:id="@+id/instruction_2_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_border"
+        android:backgroundTint="@color/teal_200"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/instruction_2_txt"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColorHint="@color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etInterval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="@string/instruction_2_txt"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:maxLength="2"
+        android:textColorHint="#757575" />
+
+    <TextView
+        android:id="@+id/etOption1_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/textview_border"
+        android:backgroundTint="@color/teal_200"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/option_1_txt"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColorHint="@color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etCurrent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="@string/option_1_txt"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:maxLength="3"
+        android:minHeight="48dp"
+        android:textColorHint="#757575" />
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/Submit"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"
+                android:backgroundTint="@color/green"
+                android:gravity="center"
+                android:text="PROGRAM" />
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"
+                android:gravity="center"
+                android:text="Cancel" />
+            <Button
+                android:id="@+id/exit_button"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"
+                android:gravity="center"
+                android:text="@string/Exit" />
+        </TableRow>
+    </TableLayout>
+
+
+    <Button
+        android:id="@+id/ManualStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/green"
+        android:text="Manual START" />
+    <Button
+        android:id="@+id/ManualStop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:text="Manual STOP" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    </RadioGroup>
+
+</LinearLayout>
+

@@ -45,7 +45,7 @@ public:
   void end();
 
   int beginPacket(int implicitHeader = false);
-  int endPacket();
+  int endPacket(bool async = false);
 
   int parsePacket(int size = 0);
   int packetRssi();
@@ -77,6 +77,10 @@ public:
   void setSyncWord(int sw);
   void enableCrc();
   void disableCrc();
+  void enableTxInvertIQ();
+  void enableRxInvertIQ();
+  void enableInvertIQ();
+  void disableInvertIQ();
 
   // deprecated
   void crc() { enableCrc(); }

@@ -8,15 +8,15 @@
  * 
  * - LED blink test;
  * 
- * - WIFI join and scan test;
+ * - WIFI connect and scan test;
  * 
- * - LoRa Ping-Pong test(DIO0 -- GPIO26 interrup check the new incoming messages;
+ * - LoRa Ping-Pong test (DIO0 -- GPIO26 interrup check the new incoming messages);
  * 
  * - Timer test and some other Arduino basic functions.
  *
  * by Aaron.Lee from HelTec AutoMation, ChengDu, China
  * 鎴愰兘鎯犲埄鐗硅嚜鍔ㄥ寲绉戞妧鏈夐檺鍏徃
- * www.heltec.cn
+ * https://heltec.org
  *
  * this project also realess in GitHub:
  * https://github.com/HelTecAutomation/Heltec_ESP32
@@ -39,6 +39,8 @@ bool receiveflag = false; // software flag for LoRa receiver, received data make
 
 long lastSendTime = 0;        // last send time
 int interval = 1000;          // interval between sends
+uint64_t chipid;
+int16_t RssiDetection = 0;
 
 void logo(){
 	Heltec.display -> clear();
@@ -50,10 +52,10 @@ void WIFISetUp(void)
 {
 	// Set WiFi to station mode and disconnect from an AP if it was previously connected
 	WiFi.disconnect(true);
-	delay(1000);
+	delay(100);
 	WiFi.mode(WIFI_STA);
 	WiFi.setAutoConnect(true);
-  WiFi.begin("Your WiFi SSID","Your Password");//fill in "Your WiFi SSID","Your Password"
+	WiFi.begin("Your WiFi SSID","Your Password");//fill in "Your WiFi SSID","Your Password"
 	delay(100);
 
 	byte count = 0;
@@ -87,10 +89,8 @@ void WIFISetUp(void)
 void WIFIScan(unsigned int value)
 {
 	unsigned int i;
-  if(WiFi.status() != WL_CONNECTED)
-  {
-    WiFi.mode(WIFI_MODE_NULL);
-  }	
+    WiFi.mode(WIFI_STA);
+
 	for(i=0;i<value;i++)
 	{
 		Heltec.display -> drawString(0, 20, "Scan start...");
@@ -151,7 +151,6 @@ void interrupt_GPIO0()
   }
 }
 
-
 void setup()
 {
 	Heltec.begin(true /*DisplayEnable Enable*/, true /*LoRa Enable*/, true /*Serial Enable*/, true /*LoRa use PABOOST*/, BAND /*LoRa RF working band*/);
@@ -161,13 +160,21 @@ void setup()
 	Heltec.display -> clear();
 
 	WIFISetUp();
+	WiFi.disconnect(); //重新初始化WIFI
+	WiFi.mode(WIFI_STA);
+	delay(100);
+
 	WIFIScan(1);
-  
-  attachInterrupt(0,interrupt_GPIO0,FALLING);
+
+	chipid=ESP.getEfuseMac();//The chip ID is essentially its MAC address(length: 6 bytes).
+	Serial.printf("ESP32ChipID=%04X",(uint16_t)(chipid>>32));//print High 2 bytes
+	Serial.printf("%08X\n",(uint32_t)chipid);//print Low 4bytes.
+
+  	attachInterrupt(0,interrupt_GPIO0,FALLING);
 	LoRa.onReceive(onReceive);
-  send();
-  LoRa.receive();
-  displaySendReceive();
+  	send();
+  	LoRa.receive();
+  	displaySendReceive();
 }
 
 
@@ -201,7 +208,7 @@ void loop()
  }
  if(receiveflag)
  {
-    digitalWrite(25,HIGH);
+    //digitalWrite(25,HIGH);
     displaySendReceive();
     delay(1000);
     receiveflag = false;  
@@ -221,9 +228,9 @@ void send()
 void displaySendReceive()
 {
     Heltec.display -> drawString(0, 50, "Packet " + (String)(counter-1) + " sent done");
-    Heltec.display -> drawString(0, 0, "Received Size" + packSize + " packages:");
+    Heltec.display -> drawString(0, 0, "Received Size  " + packSize + " packages:");
     Heltec.display -> drawString(0, 10, packet);
-    Heltec.display -> drawString(0, 20, "With " + rssi);
+    Heltec.display -> drawString(0, 20, "With " + rssi + "db");
     Heltec.display -> display();
     delay(100);
     Heltec.display -> clear();
@@ -241,6 +248,15 @@ void onReceive(int packetSize)//LoRa receiver interrupt service
     }
 
     Serial.println(packet);
-    rssi = "RSSI: " + String(LoRa.packetRssi(), DEC);    
+    rssi = "RSSI: " + String(LoRa.packetRssi(), DEC);
+    RssiDetection= abs(LoRa.packetRssi());
+    if(RssiDetection < 65)
+    {
+     digitalWrite(25, HIGH);  
+    }
+     else
+    {
+     digitalWrite(25, LOW);  
+    }        
     receiveflag = true;    
 }
