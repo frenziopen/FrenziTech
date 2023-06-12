@@ -280,9 +280,10 @@ void setup() {
 
   // put your setup code here, to run once:
   Serial.begin(115200);
-  LTESerial.begin(115200, SERIAL_8N1, LTE_RX, LTE_TX);
-  ESP_BT.begin("Frenzimned Therapy BT");   // Name of your Bluetooth Signal
+//  LTESerial.begin(115200, SERIAL_8N1, LTE_RX, LTE_TX);
+  ESP_BT.begin("FrenziTech BT");   // Name of your Bluetooth Signal
   Serial.println("Bluetooth Device is Ready to Pair");
+  /*
   Serial2.begin(4800);
   Serial.println("Press 1 ");
   rtc.setTime(30, 24, 15, 17, 1, 2021);  // 17th Jan 2021 15:24:30
@@ -307,8 +308,8 @@ void setup() {
   sendData("AT+CCLK?\r\n", 3000, DEBUG);
   //ConfigureFTP(ftp_server,ftp_user_name,ftp_user_password);
   delay(500);
-
-  Heltec.begin(true /*DisplayEnable Enable*/, true /*Heltec.LoRa Enable*/, false /*Serial Enable*/, true /*PABOOST Enable*/, BAND /*long BAND*/);
+*/
+  ///Heltec.begin(true /*DisplayEnable Enable*/, true /*Heltec.LoRa Enable*/, false /*Serial Enable*/, true /*PABOOST Enable*/, BAND /*long BAND*/);
   digitalWrite(GPIO25, HIGH);   // turn the LED on (HIGH is the voltage level)
   delay(100);                       // wait for a second
   digitalWrite(GPIO25, LOW);    // turn the LED off by making the voltage LOW
@@ -368,7 +369,7 @@ void loop() {
   digitalWrite(MOT_RLC1_GPO32, HIGH);
   digitalWrite(MOT_RLC2_GPO33, HIGH);
 
-  rms_current();
+ // rms_current();
 
   /*
     esp_sleep_enable_timer_wakeup(60000000);
@@ -378,7 +379,7 @@ void loop() {
     esp_light_sleep_start();
 
   */
-
+/*
   tenMinDelay = tenMinDelay + 1;
 
   if (  tenMinDelay > 10) {
@@ -400,6 +401,7 @@ void loop() {
     sendData("AT+HTTPTERM\r\n", 3000, DEBUG);
     sendData("AT+CCLK?\r\n", 3000, DEBUG);
   }
+  */
   /*
     Serial.println("Press 1 ");
     int aVin = analogRead(GPI38);
