@@ -11,38 +11,41 @@
 PCF8575 PCF(0x20);
 
 
-void setup()
-{
+void setup() {
   Serial.begin(115200);
   Serial.println(__FILE__);
   Serial.print("PCF8575_LIB_VERSION:\t");
   Serial.println(PCF8575_LIB_VERSION);
 
-  if (!PCF.begin())
-  {
+  if (!PCF.begin()) {
     Serial.println("could not initialize...");
   }
-  if (!PCF.isConnected())
-  {
+  if (!PCF.isConnected()) {
     Serial.println("=> not connected");
-  }
-  else
-  {
+  } else {
     Serial.println("=> connected!!");
   }
 }
 
 
-void loop()
-{
-  PCF.write(2, HIGH);
+void loop() {
+  Serial.println("ON");
+
+  PCF.write(1, HIGH);
+  PCF.write(0, LOW);
+  delay(75);
   PCF.write(1, LOW);
-  delay(1000);
-  PCF.toggle(2);
-  PCF.toggle(1);
-  delay(1000);
+  PCF.write(0, LOW);
+  delay(2000);
+  Serial.println("OFF");
+
+  PCF.write(0, HIGH);
+  PCF.write(1, LOW);
+  delay(75);
+  PCF.write(1, LOW);
+  PCF.write(0, LOW);
+  delay(2000);
 }
 
 
 // -- END OF FILE --
-
