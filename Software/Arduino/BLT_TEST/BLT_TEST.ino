@@ -23,6 +23,7 @@
 #define GPIO25 25
 #define MOT_RLC1_GPO32 32  //new board 32
 #define MOT_RLC2_GPO33 33  //new board 33
+#define BAND    915E6 //you can set band here directly,e.g. 868E6,915E6
 
 BluetoothSerial BTSerial;  // Object for Bluetooth
 
@@ -53,6 +54,7 @@ bool newMessage = 0;
 
 char BTConfig[100];
 int ConfigByte = 0;
+int counter = 0;
 void setup() {
   Serial.begin(115200);                     // Start Serial monitor in 115200
   BTSerial.begin("Frenzimned Therapy BT");  // Name of your Bluetooth Signal
@@ -65,6 +67,9 @@ void setup() {
   digitalWrite(GPIO25, HIGH);
   delay(500);
   digitalWrite(GPIO25, LOW);
+  //WIFI Kit series V1 not support Vext control
+  Heltec.begin(true /*DisplayEnable Enable*/, true /*Heltec.LoRa Disable*/, true /*Serial Enable*/, true /*PABOOST Enable*/, BAND /*long BAND*/);
+
 }
 
 /*----------------------------------------------------------------------------
@@ -108,19 +113,25 @@ void loop() {
 //Serial.println("Bluetooth Device is Ready to Pair");
 void BTScan() {
   String BTString = receiveBTData(DEBUG);
+  
   if (newMessage == 1) {
     newMessage = 0;
     // check if the desired answer  is in the response of the module
     if (BTString == "PhoneConnect") {
       Serial.println("Bluetooth Device is connected ...");
     }
-    if (BTString == "StartPump") {
+    Serial.println("Aadil");
+    BTString.trim();
+    Serial.println(BTString);
+    BTSerial.println(BTString);
+    if (BTString == "1") {
       MANUAL_START = 1;
       MANUAL_STOP = 0;
       BTSerial.println("OK");
+      sendLoraData()
       BTSerial.flush();
     }
-    if (BTString == "StopPump") {
+    if (BTString == "0") {
       MANUAL_START = 0;
       MANUAL_STOP = 1;
       BTSerial.println("OK");
@@ -166,8 +177,7 @@ String sendBTData(String command, const int timeout, boolean debug) {
   long int time = millis();
   while ((time + timeout) > millis()) {
     while (BTSerial.available()) {
-      char c = BTSerial.read();
-      response += c;
+      response = BTSerial.readString();
     }
   }
   if (debug) {
@@ -190,11 +200,38 @@ String receiveBTData(boolean debug) {
   String response = "";
   while (BTSerial.available()) {
     char c = BTSerial.read();
-    response += c;
-    newMessage = 1;
+    if (c != '\n') {
+      response += c;
+      newMessage = 1;
+    }
   }
   if (debug & newMessage) {
     Serial.println(response);
   }
   return response;
+}
+
+void sendLoraData(bool motorSwitch) {
+  Serial.print("Sending packet: ");
+  Serial.println(counter);
+  Serial.println(motorSwitch);
+  // send packet
+  LoRa.beginPacket();
+/*
+* LoRa.setTxPower(txPower,RFOUT_pin);
+* txPower -- 0 ~ 20
+* RFOUT_pin could be RF_PACONFIG_PASELECT_PABOOST or RF_PACONFIG_PASELECT_RFO
+*   - RF_PACONFIG_PASELECT_PABOOST -- LoRa single output via PABOOST, maximum output 20dBm
+*   - RF_PACONFIG_PASELECT_RFO     -- LoRa single output via RFO_HF / RFO_LF, maximum output 14dBm
+*/
+  LoRa.setTxPower(14,RF_PACONFIG_PASELECT_PABOOST);
+  LoRa.print("hello ");
+  LoRa.print(counter);
+  LoRa.endPacket();
+  
+  counter++;
+  digitalWrite(25, HIGH);   // turn the LED on (HIGH is the voltage level)
+  delay(1000);                       // wait for a second
+  digitalWrite(25, LOW);    // turn the LED off by making the voltage LOW
+  delay(1000);                       // wait for a second
 }

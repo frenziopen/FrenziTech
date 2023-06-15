@@ -25,10 +25,20 @@ void setup() {
   } else {
     Serial.println("=> connected!!");
   }
+  /*
+  PCF.write(0, LOW);
+  PCF.write(1, LOW);*/
+  PCF.write(2, LOW);
+  PCF.write(3, LOW);
+  PCF.write(4, LOW);
+  PCF.write(5, LOW);
+  PCF.write(6, LOW);
+  PCF.write(7, LOW);
 }
 
 
 void loop() {
+  
   Serial.println("ON");
 
   PCF.write(1, HIGH);
