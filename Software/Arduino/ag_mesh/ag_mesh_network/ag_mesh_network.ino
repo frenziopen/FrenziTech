@@ -11,7 +11,7 @@
  * */
 
 #include "LoRaWan_APP.h"
-#include "Arduino.h"
+//#include "Arduino.h"
 
 /*
  * set LoraWan_RGB to 1,the RGB active in loraWan
@@ -22,9 +22,9 @@
 #define LoraWan_RGB 0
 #endif
 
-#define RF_FREQUENCY 868000000  // Hz
+#define RF_FREQUENCY 915000000  // Hz
 
-#define TX_OUTPUT_POWER 5  // dBm
+#define TX_OUTPUT_POWER 20  // dBm
 
 #define LORA_BANDWIDTH 0         // [0: 125 kHz, \
                                  //  1: 250 kHz, \
@@ -54,20 +54,22 @@ void OnRxDone(uint8_t *payload, uint16_t size, int16_t rssi, int8_t snr);
 
 typedef enum {
   LOWPOWER,
-  RX,
-  TX
+  RX_ag,
+  TX_ag
 } States_t;
 
 States_t state;
 bool sleepMode = false;
 int16_t Rssi, rxSize;
-int myID = 0x01;
-const uint8_t nodecount = 2;
-int16_t routes[nodecount][2] = { { 1, 255 }, { 2, 0 } };
+int myID = 0x02;
+const uint8_t nodecount = 4;
+int16_t routes[nodecount][4] = { { 1, 0 }, { 2, 255 }, {3, 0}, {4, 0} };
 uint8_t destID;
 
 void setup() {
   Serial.begin(115200);
+
+  //Mcu.begin();
 
   Rssi = 0;
 
@@ -86,7 +88,7 @@ void setup() {
                     LORA_CODINGRATE, 0, LORA_PREAMBLE_LENGTH,
                     LORA_SYMBOL_TIMEOUT, LORA_FIX_LENGTH_PAYLOAD_ON,
                     0, true, 0, 0, LORA_IQ_INVERSION_ON, true);
-  state = TX;
+  state = TX_ag;
 }
 
 
@@ -94,7 +96,7 @@ void setup() {
 void loop() {
   destID = 0x02;
   switch (state) {
-    case TX:
+    case TX_ag:
 
       // Send discovery packet to all nodes in range
       delay(1000);
@@ -102,20 +104,20 @@ void loop() {
       sprintf(txpacket + strlen(txpacket), ",%d", destID);
       sprintf(txpacket + strlen(txpacket), ",%d", Rssi);
 
-      turnOnRGB(COLOR_SEND, 0);
+      //turnOnRGB(COLOR_SEND, 0);
 
       Serial.printf("\r\nsending packet \"%s\" , length %d\r\n", txpacket, strlen(txpacket));
 
       Radio.Send((uint8_t *)txpacket, strlen(txpacket));
       state = LOWPOWER;
       break;
-    case RX:
+    case RX_ag:
       Serial.println("into RX mode");
       Radio.Rx(0);
       state = LOWPOWER;
       break;
     case LOWPOWER:
-      lowPowerHandler();
+      //lowPowerHandler();
       break;
     default:
       break;
@@ -125,14 +127,14 @@ void loop() {
 
 void OnTxDone(void) {
   Serial.print("TX done......");
-  turnOnRGB(0, 0);
-  state = RX;
+  //turnOnRGB(0, 0);
+  state = RX_ag;
 }
 
 void OnTxTimeout(void) {
   Radio.Sleep();
   Serial.print("TX Timeout......");
-  state = TX;
+  state = TX_ag;
 }
 void OnRxDone(uint8_t *payload, uint16_t size, int16_t rssi, int8_t snr) {
   Rssi = rssi;
@@ -161,5 +163,5 @@ void OnRxDone(uint8_t *payload, uint16_t size, int16_t rssi, int8_t snr) {
   Serial.printf("\r\nreceived packet \"%s\" with Rssi %d , length %d\r\n", rxpacket, Rssi, rxSize);
   Serial.println("wait for next packet");
 
-  state=RX;
+  state=RX_ag;
 }
