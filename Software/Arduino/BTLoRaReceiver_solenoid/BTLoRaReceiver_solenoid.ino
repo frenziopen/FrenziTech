@@ -44,6 +44,7 @@
 #define BUFFER_SIZE 30  // Define the payload size here
 
 #define enable_pin GPIO5
+#define button_pin GPIO0
 
 char txpacket[BUFFER_SIZE];
 char rxpacket[BUFFER_SIZE];
@@ -55,6 +56,7 @@ int16_t txNumber;
 int16_t rssi, rxSize;
 int counter = 0;
 bool lora_idle = true;
+bool manual_mode = false;
 
 PCF8575 PCF(0x20);
 
@@ -96,13 +98,47 @@ void setup() {
   Radio.SetChannel(RF_FREQUENCY);
 
   Radio.SetRxConfig(MODEM_LORA, LORA_BANDWIDTH, LORA_SPREADING_FACTOR, LORA_CODINGRATE, 0, LORA_PREAMBLE_LENGTH, LORA_SYMBOL_TIMEOUT, LORA_FIX_LENGTH_PAYLOAD_ON, 0, true, 0, 0, LORA_IQ_INVERSION_ON, true);
-  
+
   digitalWrite(enable_pin, LOW);
 }
 
 
 
 void loop() {
+  if (manual_mode) {
+    if (digitalRead(button_pin) == 1) {
+      digitalWrite(enable_pin, HIGH);
+      PCF.write(0, LOW);
+      PCF.write(1, HIGH);
+      delay(75);
+      PCF.write(0, LOW);
+      PCF.write(1, LOW);
+      delay(2000);
+      PCF.write(2, LOW);
+      PCF.write(3, HIGH);
+      delay(75);
+      PCF.write(2, LOW);
+      PCF.write(3, LOW);
+      delay(75);
+      digitalWrite(enable_pin, LOW);
+      delay(1000 * 60);
+      digitalWrite(enable_pin, HIGH);
+      PCF.write(0, HIGH);
+      PCF.write(1, LOW);
+      delay(75);
+      PCF.write(0, LOW);
+      PCF.write(1, LOW);
+      delay(2000);
+      PCF.write(2, HIGH);
+      PCF.write(3, LOW);
+      delay(75);
+      PCF.write(2, LOW);
+      PCF.write(3, LOW);
+      delay(75);
+      digitalWrite(enable_pin, LOW);
+      delay(500);
+    }
+  }
   if (lora_idle) {
     turnOffRGB();
     lora_idle = false;
@@ -119,7 +155,10 @@ void OnRxDone(uint8_t *payload, uint16_t size, int16_t rssi, int8_t snr) {
   turnOnRGB(COLOR_RECEIVED, 0);
   Radio.Sleep();
   Serial.printf("\r\nreceived packet \"%s\" with rssi %d , length %d\r\n", rxpacket, rssi, rxSize);
-  if (counter % 2 == 0) {
+  if (rxpacket == "2") {
+    manual_mode = true;
+    goto exit;
+  } else if (counter % 2 == 0) {
     digitalWrite(enable_pin, HIGH);
     PCF.write(0, LOW);
     PCF.write(1, HIGH);
@@ -136,8 +175,7 @@ void OnRxDone(uint8_t *payload, uint16_t size, int16_t rssi, int8_t snr) {
     digitalWrite(enable_pin, LOW);
     delay(500);
     counter++;
-  }
-  else {
+  } else {
     digitalWrite(enable_pin, HIGH);
     PCF.write(0, HIGH);
     PCF.write(1, LOW);
@@ -155,5 +193,6 @@ void OnRxDone(uint8_t *payload, uint16_t size, int16_t rssi, int8_t snr) {
     delay(500);
     counter++;
   }
+exit:
   lora_idle = true;
 }

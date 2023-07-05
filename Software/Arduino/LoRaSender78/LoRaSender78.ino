@@ -74,7 +74,7 @@ void loop() {
   if (BTString == "1") {
     Serial.println(BTString);
     BTSerial.println(BTString);
-    LoraSend();
+    LoraSend(BTString);
     Serial.print("Sent packet");
     BTSerial.println("Sent packet");
     BTSerial.flush();
@@ -93,13 +93,11 @@ String receiveBTData() {
   return response;
 }
 
-void LoraSend() {
+void LoraSend(String btdata) {
   if (lora_idle == true) {
     delay(1000);
 
-    txNumber++;
-
-    sprintf(txpacket, "hello%d, Rssi : %d", txNumber, Rssi);
+    sprintf(txpacket, btdata);
 
     Serial.printf("\r\nsending packet \"%s\" , length %d\r\n", txpacket, strlen(txpacket));
 
