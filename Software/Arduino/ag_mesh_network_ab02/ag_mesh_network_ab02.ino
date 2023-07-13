@@ -60,17 +60,17 @@ typedef enum {
 } States_t;
 
 struct route{
-   int16_t nodeID;
+   uint16_t nodeID;
    int16_t rssi;
 };
 
 States_t state;
 bool sleepMode = false;
 int16_t Rssi, rxSize;
-int16_t myID = getID() >> 32;
+uint16_t myID = getID() >> 32;
 const uint8_t nodecount = 4;
 route routes[nodecount];
-int16_t destID;
+uint16_t destID;
 int16_t testMsg;
 SH1107Wire screen(0x3c, 500000, SDA, SCL, GEOMETRY_128_64, GPIO10);
 
@@ -123,7 +123,7 @@ void loop() {
       sprintf(txpacket, "%d", myID);
       sprintf(txpacket + strlen(txpacket), ",%d", destID);
       sprintf(txpacket + strlen(txpacket), ",%d", Rssi);
-      sprintf(txpacket + strlen(txpacket), ",%s", testMsg);
+      sprintf(txpacket + strlen(txpacket), ",%d", testMsg);
 
       Serial.printf("\r\nsending packet \"%s\" , length %d\r\n", txpacket, strlen(txpacket));
 
@@ -183,7 +183,7 @@ void OnTxTimeout(void) {
 void OnRxDone(uint8_t *payload, uint16_t size, int16_t rssi, int8_t snr) {
   Rssi = rssi;
   rxSize = size;
-  int16_t rx_node_id;
+  uint16_t sender_node_id;
   String rx_array[4] = {"", "", "" , ""};
   int count = 0;
 
@@ -202,20 +202,19 @@ void OnRxDone(uint8_t *payload, uint16_t size, int16_t rssi, int8_t snr) {
   }
   Serial.println("\n");
   for(int i = 0; i < 4; i ++){
+    Serial.println("\n");
     Serial.print(rx_array[i]);
   } 
 
-  rx_node_id = rx_array[0].toInt();
+  sender_node_id = rx_array[0].toInt();
   destID = rx_array[1].toInt();
-  Serial.print(rssi);
-  Serial.print(rx_node_id);
 
   Serial.printf("\r\n----This is Node %d and its routing Table----", myID);
   bool match_found = false;
   for (int i = 0; i < nodecount; i++) {
     // Update routing table for all nodes
-    if (routes[i].nodeID == rx_node_id) {
-      routes[i].rssi = Rssi;
+    if (routes[i].nodeID == sender_node_id) {
+      routes[i].rssi = rssi;
       match_found = true;
       break;
     } 
@@ -224,8 +223,8 @@ void OnRxDone(uint8_t *payload, uint16_t size, int16_t rssi, int8_t snr) {
   if(!match_found) {
     for (int j=0; j < nodecount; j++){
       if(routes[j].nodeID == 0){
-        routes[j].nodeID = rx_node_id;
-        routes[j].rssi = Rssi;
+        routes[j].nodeID = sender_node_id;
+        routes[j].rssi = rssi;
         break;
       }
     }
@@ -235,16 +234,16 @@ void OnRxDone(uint8_t *payload, uint16_t size, int16_t rssi, int8_t snr) {
      Serial.printf("\r\nNode: %ld, RSSI: %d", routes[k].nodeID, routes[k].rssi);
   }
   // If packet received from Destination Node then send acknowledgement packet
-  if (rx_node_id == myID) {
-    Serial.printf("\r\nReached Destination - Message received %s Send Acknowledgment back to node %s", rx_array[3], rx_array[0]);
+  if (destID == myID) {
+    Serial.printf("\r\nReached Destination - Message received %s ", rx_array[3]);
   } else {
     // Check if the destination node is in the routing table
     for (int i = 0; i < nodecount; i++) {
       // Find a match node with destination
-      if (routes[i].nodeID == rx_node_id) {
+      if (routes[i].nodeID == destID) {
         if(routes[i].rssi != 0) {
           // Match found, relay the received packet
-          Serial.printf("\r\nRelaying packet to destination node %s ", rx_array[1]);
+          Serial.printf("\r\nRelaying packet to destination node %d ", destID);
           testMsg = rx_array[3].toInt();
           state=TX_ag;
           return;
