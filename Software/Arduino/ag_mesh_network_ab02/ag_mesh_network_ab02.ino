@@ -101,7 +101,7 @@ void setup() {
                     LORA_CODINGRATE, 0, LORA_PREAMBLE_LENGTH,
                     LORA_SYMBOL_TIMEOUT, LORA_FIX_LENGTH_PAYLOAD_ON,
                     0, true, 0, 0, LORA_IQ_INVERSION_ON, true);
-  destID = 1;
+  destID = 25507;
   testMsg = 9;
   // Initialize routing table
   for (int i=0; i<nodecount; i++){

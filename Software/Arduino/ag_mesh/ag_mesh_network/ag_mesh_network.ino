@@ -70,6 +70,8 @@ const uint8_t nodecount = 4;
 route routes[nodecount];
 uint16_t destID;
 int16_t testMsg;
+int currentTime = 0;
+int prevTime = 0;
 
 void setup() {
   Serial.begin(115200);
@@ -93,7 +95,7 @@ void setup() {
                     LORA_CODINGRATE, 0, LORA_PREAMBLE_LENGTH,
                     LORA_SYMBOL_TIMEOUT, LORA_FIX_LENGTH_PAYLOAD_ON,
                     0, true, 0, 0, LORA_IQ_INVERSION_ON, true);
-  destID = 1;
+  destID = 50087;
   testMsg = 9;
   // Initialize routing table
   for (int i=0; i<nodecount; i++){
@@ -107,6 +109,18 @@ void setup() {
 
 void loop() {
  
+  if (currentTime < (prevTime + 1000*30) {
+    //cool stuff
+    currentTime = millis();
+  }
+  else {
+    Serial.println("Broadcasting packet...");
+    destID = 1;
+    testMsg = 1;
+    state = TX_ag;
+    prevTime = currentTime;
+  }
+
   switch (state) {
     case TX_ag:
 
@@ -227,7 +241,7 @@ void OnRxDone(uint8_t *payload, uint16_t size, int16_t rssi, int8_t snr) {
   }
   // If packet received from Destination Node then send acknowledgement packet
   if (destID == myID) {
-    Serial.printf("\r\nReached Destination - Message received %s ", rx_array[3]);
+    Serial.printf("\r\nReached Destination - Message received %d ", rx_array[3].toInt());
   } else {
     // Check if the destination node is in the routing table
     for (int i = 0; i < nodecount; i++) {
